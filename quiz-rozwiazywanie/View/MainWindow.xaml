@@ -1,0 +1,146 @@
+﻿<Window x:Class="quiz_rozwiazywanie.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:local="clr-namespace:quiz_rozwiazywanie"
+        xmlns:vm="clr-namespace:quiz_rozwiazywanie.ViewModel"
+        
+        mc:Ignorable="d"
+        Title="Rozwiązywanie Quizu" Height="450" Width="800">
+
+    <Window.Resources>
+        <vm:MainViewModel x:Key="mainVM"/>
+    </Window.Resources>
+
+    <Grid DataContext="{StaticResource mainVM}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="6*"/>
+        </Grid.RowDefinitions>
+
+        <Button Name="btn_start"  Grid.Row="0" Content="Rozpocznij" Command="{Binding Qvm.StartQuiz}"/>
+        <Button Name="btn_stop" Grid.Row="1" Content="Zakończ" Command="{Binding Qvm.StopQuiz}"/>
+
+        <Border Grid.Row="0" Grid.Column="1" BorderThickness="1" BorderBrush="Black">
+            <TextBlock TextAlignment="Center" 
+                VerticalAlignment="Center"
+                FontSize="24"
+                Text="{Binding Qvm.Time, Mode=OneWay}"
+            />
+        </Border>
+        <Border Grid.Row="1" Grid.Column="1" BorderThickness="1" BorderBrush="Black">
+            <TextBlock TextAlignment="Center" 
+               VerticalAlignment="Center"
+               FontSize="24"
+               Text="{Binding Qvm.CurrentQuestion}"
+            />
+        </Border>
+        <Grid Grid.Column="0" Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="8*"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Column="0" Grid.Row="0" BorderBrush="Black" BorderThickness="1">
+                <TextBlock
+                    Text="Wybierz Quiz:"
+                    FontSize="18"
+                    TextAlignment="Center"
+                    VerticalAlignment="Center"
+                />
+            </Border>
+            <ListBox Grid.Column="0" Grid.Row="1"
+                SelectedItem="{Binding Qvm.CurrentQuiz}"
+                ItemsSource="{Binding Qvm.Quizzes}"
+                SelectedIndex="{Binding Qvm.SelectedQuiz, Mode=TwoWay}"
+                IsEnabled="{Binding Qvm.EnableListBox}"
+            />
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="8*"/>
+                </Grid.ColumnDefinitions>
+
+                <CheckBox Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"
+                    IsChecked="{Binding Qvm.AnswerChecked0, UpdateSourceTrigger=PropertyChanged}"
+                    IsEnabled="{Binding Qvm.EnableCheckBoxes}"
+                />
+                <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Qvm.AnswerContent[0]}"/>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="8*"/>
+                </Grid.ColumnDefinitions>
+
+                <CheckBox Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"
+                    IsChecked="{Binding Qvm.AnswerChecked1, UpdateSourceTrigger=PropertyChanged}"
+                    IsEnabled="{Binding Qvm.EnableCheckBoxes}"
+                />
+                <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Qvm.AnswerContent[1]}"/>
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="8*"/>
+                </Grid.ColumnDefinitions>
+
+                <CheckBox Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"
+                    IsChecked="{Binding Qvm.AnswerChecked2, UpdateSourceTrigger=PropertyChanged}"
+                    IsEnabled="{Binding Qvm.EnableCheckBoxes}"
+                />
+                <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Qvm.AnswerContent[2]}"/>
+            </Grid>
+
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="8*"/>
+                </Grid.ColumnDefinitions>
+
+                <CheckBox Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center"
+                    IsChecked="{Binding Qvm.AnswerChecked3, UpdateSourceTrigger=PropertyChanged}"
+                    IsEnabled="{Binding Qvm.EnableCheckBoxes}"
+                />
+                <TextBlock Grid.Column="1" VerticalAlignment="Center" Text="{Binding Qvm.AnswerContent[3]}"/>
+            </Grid>
+            <Grid Grid.Column="0" Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" Grid.Row="0"
+                    Margin="5"
+                    Content="Poprzedni"
+                    Command="{Binding Qvm.PrevQuestion}"
+                />
+                <Button Grid.Column="1" Grid.Row="0"
+                    Margin="5"
+                    Content="Następny"
+                    Command="{Binding Qvm.NextQuestion}"
+                />
+            </Grid>
+            
+        </Grid>
+    </Grid>
+</Window>
