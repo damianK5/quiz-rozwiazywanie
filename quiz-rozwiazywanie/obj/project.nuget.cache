@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QXr/0bUNRA1Pu6i4KU9dUxnysNPZGdGscnWJtczX18Z6t8yzmv3qsqvpU8NUhZIwNpw+jIJlE6SQGHMyo86Z7w==",
+  "dgSpecHash": "p2jD6j5qISoIpwpyhwg/4cq60sI5WyJ4wvn1yoHEv6ejV/viiMJQj/E59r1JHCT6Ncswe573WXNlabzXsSZxmQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\damia\\Desktop\\programowanie 4\\quiz-rozwiazywanie\\quiz-rozwiazywanie\\quiz_rozwiazywanie.csproj",
+  "projectFilePath": "C:\\Users\\damia\\Desktop\\programowanie 4\\quiz_rozwiazywanie\\quiz-rozwiazywanie\\quiz_rozwiazywanie.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\damia\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\damia\\.nuget\\packages\\google.protobuf\\3.25.1\\google.protobuf.3.25.1.nupkg.sha512",
