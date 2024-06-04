@@ -25,11 +25,11 @@ namespace quiz_rozwiazywanie.DAL
 
         private DBConnection() 
         {
-            stringBuilder.UserID = "quiz";
+            stringBuilder.UserID = "root";
             stringBuilder.Server = "localhost";
             stringBuilder.Database = "quiz";
             stringBuilder.Port = 3306;
-            stringBuilder.Password = "soybean";
+            stringBuilder.Password = "Student123.";
 
             connection = new MySqlConnection(stringBuilder.ToString());
         }

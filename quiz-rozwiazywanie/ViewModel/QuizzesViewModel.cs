@@ -30,7 +30,9 @@
         private ObservableCollection<Odpowiedz> answers = new ObservableCollection<Odpowiedz>();
         private int points = 0;
         private int totalPoints = 0;
+        private string whichQuestion = "";
 
+        public string WhichQuestion { get { return whichQuestion; } set { whichQuestion = value; onPropertyChanged(nameof(WhichQuestion)); } }
         public int QuestionIndex { get { return questionIndex; } set { questionIndex = value; onPropertyChanged(nameof(QuestionIndex)); } }
         public Quiz CurrentQuiz { get { return currentQuiz; } set { currentQuiz = value; onPropertyChanged(nameof(CurrentQuiz)); Questions = model.GetQuestionsForQuiz(CurrentQuiz); AnswersChecked.Clear(); for (int i = 0; i < (questions.Count * 4); i++) answersChecked.Add(false); } }
         public Pytanie CurrentQuestion { get { return currentQuestion; } set { currentQuestion = value; onPropertyChanged(nameof(CurrentQuestion)); } }
@@ -103,6 +105,7 @@
                             EnableCheckBoxes = true;
                             questionIndex = 0;
                             answerIndex = 0;
+                            WhichQuestion = $"{questionIndex + 1}/{Questions.Count}";
                             CurrentQuestion = questions[questionIndex];
                             AnswerContent = model.GetAnswersForQuestion(CurrentQuestion);
                             AnswersChecked.Clear();
@@ -142,6 +145,7 @@
                         EnableCheckBoxes = false;
                         CurrentQuestion = null;
                         AnswerContent = null;
+                        WhichQuestion = "";
                         AnswersChecked[AnswerIndex] = answerChecked0;
                         AnswersChecked[AnswerIndex + 1] = answerChecked1;
                         AnswersChecked[AnswerIndex + 2] = answerChecked2;
@@ -161,7 +165,7 @@
                             else if (answersChecked[i] != answers[i].Correct && answersChecked[i]) points -= 1;
                             if (answers[i].Correct) totalPoints += 1;
                         }
-                        MessageBox.Show($"Ilość punktów: {points}/{totalPoints}\nCzas: {Time}");
+                        MessageBox.Show($"Ilość punktów: {points}/{totalPoints}\nCzas: {Time}", "Wynik quizu");
                         Time = TimeSpan.Zero;
                     }
                     ,
@@ -188,6 +192,7 @@
                             questionIndex++;
                             CurrentQuestion = questions[questionIndex];
                             AnswerContent = model.GetAnswersForQuestion(CurrentQuestion);
+                            WhichQuestion = $"{questionIndex + 1}/{Questions.Count}";
                             AnswersChecked[AnswerIndex] = answerChecked0;
                             AnswersChecked[AnswerIndex + 1] = answerChecked1;
                             AnswersChecked[AnswerIndex + 2] = answerChecked2;
@@ -222,6 +227,7 @@
                             questionIndex--;
                             CurrentQuestion = questions[questionIndex];
                             AnswerContent = model.GetAnswersForQuestion(CurrentQuestion);
+                            WhichQuestion = $"{questionIndex + 1}/{Questions.Count}";
                             AnswersChecked[AnswerIndex] = answerChecked0;
                             AnswersChecked[AnswerIndex + 1] = answerChecked1;
                             AnswersChecked[AnswerIndex + 2] = answerChecked2;

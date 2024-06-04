@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\damia\\Desktop\\programowanie 4\\quiz_rozwiazywanie\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C1B46CD-07C5-41AB-9E13-F826B1CFFB25}|quiz-rozwiazywanie\\quiz_rozwiazywanie.csproj|C:\\Users\\damia\\Desktop\\programowanie 4\\quiz_rozwiazywanie\\quiz-rozwiazywanie\\dal\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C1B46CD-07C5-41AB-9E13-F826B1CFFB25}|quiz-rozwiazywanie\\quiz_rozwiazywanie.csproj|solutionrelative:quiz-rozwiazywanie\\dal\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C1B46CD-07C5-41AB-9E13-F826B1CFFB25}|quiz-rozwiazywanie\\quiz_rozwiazywanie.csproj|c:\\users\\damia\\desktop\\programowanie 4\\quiz_rozwiazywanie\\quiz-rozwiazywanie\\viewmodel\\quizzesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2C1B46CD-07C5-41AB-9E13-F826B1CFFB25}|quiz-rozwiazywanie\\quiz_rozwiazywanie.csproj|C:\\Users\\damia\\Desktop\\programowanie 4\\quiz_rozwiazywanie\\quiz-rozwiazywanie\\viewmodel\\quizzesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C1B46CD-07C5-41AB-9E13-F826B1CFFB25}|quiz-rozwiazywanie\\quiz_rozwiazywanie.csproj|solutionrelative:quiz-rozwiazywanie\\viewmodel\\quizzesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C1B46CD-07C5-41AB-9E13-F826B1CFFB25}|quiz-rozwiazywanie\\quiz_rozwiazywanie.csproj|C:\\Users\\damia\\Desktop\\programowanie 4\\quiz_rozwiazywanie\\quiz-rozwiazywanie\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{2C1B46CD-07C5-41AB-9E13-F826B1CFFB25}|quiz-rozwiazywanie\\quiz_rozwiazywanie.csproj|solutionrelative:quiz-rozwiazywanie\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C1B46CD-07C5-41AB-9E13-F826B1CFFB25}|quiz-rozwiazywanie\\quiz_rozwiazywanie.csproj|c:\\users\\damia\\desktop\\programowanie 4\\quiz_rozwiazywanie\\quiz-rozwiazywanie\\dal\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C1B46CD-07C5-41AB-9E13-F826B1CFFB25}|quiz-rozwiazywanie\\quiz_rozwiazywanie.csproj|solutionrelative:quiz-rozwiazywanie\\dal\\dbconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C1B46CD-07C5-41AB-9E13-F826B1CFFB25}|quiz-rozwiazywanie\\quiz_rozwiazywanie.csproj|C:\\Users\\damia\\Desktop\\programowanie 4\\quiz_rozwiazywanie\\quiz-rozwiazywanie\\model\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,43 +26,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DBConnection.cs",
               "DocumentMoniker": "C:\\Users\\damia\\Desktop\\programowanie 4\\quiz_rozwiazywanie\\quiz-rozwiazywanie\\DAL\\DBConnection.cs",
               "RelativeDocumentMoniker": "quiz-rozwiazywanie\\DAL\\DBConnection.cs",
               "ToolTip": "C:\\Users\\damia\\Desktop\\programowanie 4\\quiz_rozwiazywanie\\quiz-rozwiazywanie\\DAL\\DBConnection.cs",
               "RelativeToolTip": "quiz-rozwiazywanie\\DAL\\DBConnection.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAgwB8AAAAtAAAA",
+              "ViewState": "AQIAAA4AAAAQZ2ZmZmYCwB8AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T22:13:49.265Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "QuizzesViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\damia\\Desktop\\programowanie 4\\quiz_rozwiazywanie\\quiz-rozwiazywanie\\ViewModel\\QuizzesViewModel.cs",
+              "RelativeDocumentMoniker": "quiz-rozwiazywanie\\ViewModel\\QuizzesViewModel.cs",
+              "ToolTip": "C:\\Users\\damia\\Desktop\\programowanie 4\\quiz_rozwiazywanie\\quiz-rozwiazywanie\\ViewModel\\QuizzesViewModel.cs",
+              "RelativeToolTip": "quiz-rozwiazywanie\\ViewModel\\QuizzesViewModel.cs",
+              "ViewState": "AQIAAJwAAAAA8/////8ewKcAAABsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T19:38:31.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\damia\\Desktop\\programowanie 4\\quiz_rozwiazywanie\\quiz-rozwiazywanie\\View\\MainWindow.xaml",
               "RelativeDocumentMoniker": "quiz-rozwiazywanie\\View\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\damia\\Desktop\\programowanie 4\\quiz_rozwiazywanie\\quiz-rozwiazywanie\\View\\MainWindow.xaml",
               "RelativeToolTip": "quiz-rozwiazywanie\\View\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-31T11:15:43.978Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QuizzesViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\damia\\Desktop\\programowanie 4\\quiz_rozwiazywanie\\quiz-rozwiazywanie\\ViewModel\\QuizzesViewModel.cs",
-              "RelativeDocumentMoniker": "quiz-rozwiazywanie\\ViewModel\\QuizzesViewModel.cs",
-              "ToolTip": "C:\\Users\\damia\\Desktop\\programowanie 4\\quiz_rozwiazywanie\\quiz-rozwiazywanie\\ViewModel\\QuizzesViewModel.cs",
-              "RelativeToolTip": "quiz-rozwiazywanie\\ViewModel\\QuizzesViewModel.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAiwG8AAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T19:38:31.713Z",
+              "WhenOpened": "2024-05-31T11:15:43.978Z",
               "EditorCaption": ""
             },
             {
